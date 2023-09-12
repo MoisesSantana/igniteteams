@@ -2,6 +2,7 @@ import { Header } from "@components/header";
 import { Container, Content, Icon } from "./styles";
 import { Highlight } from "@components/highlight";
 import { Button } from "@components/button";
+import { Input } from "@components/input";
 
 const highlightProps = {
   title: "Nova turma",
@@ -22,7 +23,10 @@ export function NewGroup() {
           title={highlightProps.title}
           subtitle={highlightProps.subtitle}
         />
-        <Button title={buttonProps.title} />
+        <Input
+          placeholder="Nome da turma"
+        />
+        <Button title={buttonProps.title} style={{ marginTop: 20 }} />
       </Content>
     </Container>
   )
